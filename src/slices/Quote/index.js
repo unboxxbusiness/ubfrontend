@@ -12,7 +12,7 @@ const Quote = ({ slice }) => {
           <blockquote>
             <p
               className={clsx(
-                "text-4xl font-medium leading-tight md:text-5xl md:leading-tight",
+                "text-2xl font-medium leading-tight md:text-5xl md:leading-tight",
                 !prismic.isFilled.keyText(slice.primary.source) && "text-center"
               )}
             >
