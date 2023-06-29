@@ -24,7 +24,9 @@ const Hero = ({ slice }) => {
           field={backgroundImage}
           alt=""
           fill={true}
-          className="pointer-events-none select-none object-cover opacity-40"
+          width={1600}
+          height={800}
+          className="pointer-events-none select-none object-cover opacity-30"
         />
       )}
       <Bounded yPadding="lg" className="relative">
@@ -38,7 +40,7 @@ const Hero = ({ slice }) => {
           {prismic.isFilled.link(slice.primary.buttonLink) && (
             <PrismicNextLink
               field={slice.primary.buttonLink}
-              className="rounded bg-white px-5 py-3 font-medium text-slate-800"
+              className="rounded bg-white px-5 py-3 font-bold text-slate-800"
             >
               {slice.primary.buttonText || "Learn More"}
             </PrismicNextLink>
