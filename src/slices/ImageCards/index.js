@@ -11,7 +11,7 @@ const ImageCard = ({ item }) => {
   const image = item.image;
 
   return (
-    <li className="grid gap-8">
+    <li className="grid gap-8 shadow-lg px-6 py-6">
       {prismic.isFilled.image(image) && (
         <div className="bg-gray-100">
           <ConditionalWrap
@@ -22,7 +22,7 @@ const ImageCard = ({ item }) => {
               </PrismicNextLink>
             )}
           >
-            <PrismicNextImage field={image} sizes="100vw" className="w-full shadow-lg rounded-lg" />
+            <PrismicNextImage field={image} sizes="100vw" className="w-full" />
           </ConditionalWrap>
         </div>
       )}
@@ -42,10 +42,10 @@ const ImageCard = ({ item }) => {
 
 const ImageCards = ({ slice }) => {
   return (
-    <Bounded as="section" className="bg-gray-100">
+    <Bounded as="section" className="bg-white">
       <div className="grid gap-12">
         {prismic.isFilled.richText(slice.primary.heading) && (
-          <Heading className="text-left underline decoration-sky-600 hover:decoration-blue-400">
+          <Heading className="text-left underline decoration-red-700 hover:decoration-green-700">
             <PrismicText field={slice.primary.heading} />
           </Heading>
         )}
