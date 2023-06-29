@@ -17,7 +17,7 @@
             "label": "Text",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading1,strong,em"
+            "multi": "paragraph,heading1,strong,em,preformatted,heading2,heading3,heading4,heading5,heading6,hyperlink,image,embed,list-item,o-list-item"
           }
         },
         "buttonLink": {
@@ -30,10 +30,7 @@
         },
         "buttonText": {
           "type": "Text",
-          "config": {
-            "label": "Button Text",
-            "placeholder": ""
-          }
+          "config": { "label": "Button Text", "placeholder": "" }
         },
         "backgroundImage": {
           "type": "Image",

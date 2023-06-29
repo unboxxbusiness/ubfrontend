@@ -17,17 +17,14 @@
             "label": "Text",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item"
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,preformatted,image,heading4,heading5,heading6,embed,o-list-item,list-item"
           }
         },
         "image": {
           "type": "Image",
           "config": {
             "label": "Image",
-            "constraint": {
-              "width": 1000,
-              "height": 1200
-            },
+            "constraint": { "width": 1000, "height": 1200 },
             "thumbnails": []
           }
         }
@@ -48,7 +45,7 @@
             "label": "Text",
             "placeholder": "",
             "allowTargetBlank": true,
-            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,o-list-item,list-item"
+            "multi": "paragraph,heading1,heading2,heading3,strong,em,hyperlink,list-item,o-list-item,preformatted,image,embed,heading4,heading5,heading6"
           }
         },
         "buttonLink": {
@@ -61,18 +58,11 @@
         },
         "buttonText": {
           "type": "Text",
-          "config": {
-            "label": "Button Text",
-            "placeholder": ""
-          }
+          "config": { "label": "Button Text", "placeholder": "" }
         },
         "image": {
           "type": "Image",
-          "config": {
-            "label": "Image",
-            "constraint": {},
-            "thumbnails": []
-          }
+          "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
         }
       },
       "items": {},
