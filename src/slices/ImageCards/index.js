@@ -49,7 +49,7 @@ const ImageCards = ({ slice }) => {
             <PrismicText field={slice.primary.heading} />
           </Heading>
         )}
-        <ul className="grid grid-cols-1 items-start gap-8 md:grid-cols-2">
+        <ul className="grid grid-cols-1 items-start gap-8 md:grid-cols-3">
           {slice.items.map((item) => (
             <ImageCard key={item.image.url} item={item} />
           ))}
