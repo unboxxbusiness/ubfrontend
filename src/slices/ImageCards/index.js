@@ -45,7 +45,7 @@ const ImageCards = ({ slice }) => {
     <Bounded as="section" className="bg-white">
       <div className="grid gap-12">
         {prismic.isFilled.richText(slice.primary.heading) && (
-          <Heading className="text-center text-2xl md:text-4xl underline decoration-red-700 hover:decoration-green-700">
+          <Heading className="text-center underline decoration-red-700 hover:decoration-green-700">
             <PrismicText field={slice.primary.heading} />
           </Heading>
         )}
