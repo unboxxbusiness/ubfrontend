@@ -16,6 +16,19 @@
           "single": "heading1"
         }
       },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+      },
       "parent": {
         "type": "Link",
         "config": {
