@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import { Header } from "./Header";
 
 export function Layout({ navigation, settings, children }) {
@@ -5,6 +6,7 @@ export function Layout({ navigation, settings, children }) {
     <div className="text-slate-800">
       <Header navigation={navigation} settings={settings} />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }
