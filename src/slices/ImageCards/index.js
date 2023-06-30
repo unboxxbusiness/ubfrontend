@@ -13,7 +13,7 @@ const ImageCard = ({ item }) => {
   return (
     <li className="grid gap-8 shadow-lg px-6 py-6">
       {prismic.isFilled.image(image) && (
-        <div className="bg-gray-100">
+        <div className="bg-white">
           <ConditionalWrap
             condition={prismic.isFilled.link(item.buttonLink)}
             wrap={({ children }) => (
@@ -42,7 +42,7 @@ const ImageCard = ({ item }) => {
 
 const ImageCards = ({ slice }) => {
   return (
-    <Bounded as="section" className="bg-white">
+    <Bounded as="section" className="bg-gray-100">
       <div className="grid gap-12">
         {prismic.isFilled.richText(slice.primary.heading) && (
           <Heading className="text-center underline decoration-red-700 hover:decoration-green-700">
