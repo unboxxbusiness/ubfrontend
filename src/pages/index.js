@@ -9,7 +9,7 @@ import { Layout } from "@/components/Layout";
 const Index = ({ page, navigation, settings }) => {
   const metaTitle = prismic.asText(page.data.title);
   const metaDescription = prismic.asText(page.data.description);
-  const metaImageUrl = page.data.image;
+  const metaImageUrl = prismic.asImageSrc(page.data.image);
 
   return (
     <Layout navigation={navigation} settings={settings}>
