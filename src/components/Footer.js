@@ -15,7 +15,7 @@ const Footer = () => {
       Partner with Our Expert Designers for Professional Book Web Design Services.
       </p>
 
-      <Link href="#"
+      <Link href="https://drive.google.com/file/d/1Z3zCjzhuriS20uaUdgCW5LZep0wm1Liy/view?usp=sharing"
         className="mt-8 inline-block rounded-full border border-gray-900 px-12 py-3 text-sm font-medium text-gray-900 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring active:bg-gray-800"
       >
         Download Brochure Now
